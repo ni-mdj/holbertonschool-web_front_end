@@ -1,0 +1,165 @@
+/* 1-style.css - Smooth scrolling for the webpage */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* 2-style.css - Setting color values for various elements */
+
+/* Set foreground color for the body */
+body {
+    color: #161616;
+}
+
+/* Set foreground color for all anchor elements */
+a {
+    color: #161616;
+}
+
+/* Hide all elements with class 'visually-hidden' */
+.visually-hidden {
+    display: none;
+}
+
+/* Set foreground color for elements with class 'card-category' */
+.card-category {
+    color: #D73953;
+}
+
+/* Set foreground color for elements with class 'section-tagline' */
+.section-tagline {
+    color: #D73953;
+}
+
+/* 3-style.css - Using CSS variables for better reusability */
+
+/* Define custom properties in the root element */
+:root {
+    --color-primary: #d73953;
+    --color-black: #090909;
+    --color-white: #ffffff;
+    --color-light-grey: #f3f3f3;
+    --color-dark-grey: #353535;
+    --text-color: var(--color-black);
+}
+
+/* Apply text color to the body */
+body {
+    color: var(--text-color);
+}
+
+/* Apply text color to all anchor elements */
+a {
+    color: var(--text-color);
+}
+
+/* Hide all elements with class 'visually-hidden' */
+.visually-hidden {
+    display: none;
+}
+
+/* Apply color-primary to card-category */
+.card-category {
+    color: var(--color-primary);
+}
+
+/* Apply color-primary to section-tagline */
+.section-tagline {
+    color: var(--color-primary);
+}
+
+/* 4-style.css - Using CSS variables for font families */
+
+/* Define font-family variables */
+:root {
+    --font-family-base: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-family-title: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Apply base font family to the body */
+body {
+    font-family: var(--font-family-base);
+}
+
+/* Apply title font family to all heading elements */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-family-title);
+}
+
+/* 5-style.css - Using CSS variables for font sizes */
+
+/* Define font-size variables */
+:root {
+    --font-size-small: 1.2rem;
+    --font-size-medium: 1.6rem;
+    --font-size-large: 1.8rem;
+    --font-size-x-large: 2.3rem;
+    --font-size-xx-large: 4.8rem;
+}
+
+/* Set base font size for easier rem calculations (1rem = 10px) */
+html {
+    font-size: 62.5%;
+}
+
+/* Apply medium font size to the body */
+body {
+    font-size: var(--font-size-medium);
+}
+
+/* 6-style.css - Using CSS variables for font weights */
+
+/* Define font-weight variables */
+:root {
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+}
+
+/* Apply regular font weight to the body */
+body {
+    font-weight: var(--font-weight-regular);
+}
+
+/* Apply bold font weight to all heading elements */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: var(--font-weight-bold);
+}
+
+/* 7-style.css - Integrating Google Fonts */
+
+/* Define font-family variables */
+:root {
+    --font-family-base: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-family-title: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Apply base font family to the body */
+body {
+    font-family: var(--font-family-base);
+}
+
+/* Apply title font family to all heading elements */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-family-title);
+}
+
+/* 8-style.css - Defining line heights */
+
+/* Define line-height variables */
+:root {
+    --line-height-small: 1.2;
+    --line-height-base: 1.5;
+    --line-height-big: 1.8;
+}
+
+/* Apply base line height to the body */
+body {
+    line-height: var(--line-height-base);
+}
+
+/* 9-style.css - Remove default text decoration from links */
+
+/* Remove underline from all anchor elements */
+a {
+    text-decoration: none;
+}
